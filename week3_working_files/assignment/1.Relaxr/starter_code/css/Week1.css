@@ -1,0 +1,217 @@
+/*
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Nick Markham
+Developer @GA in SG
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+/* Box Model Hack */
+
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear {
+  clear: both;
+}
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
+}
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/* Center the container */
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+header {
+  background-attachment: fixed;
+  background: url(../images/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  height: 500px;
+  text-align: center;
+}
+header h1 {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: Semibold;
+  padding: 100px 0 40px 0;
+  text-align: center;
+}
+.header-logo {
+  color: #fff;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 30px 600px 0 40px;
+}
+.header-button {
+  background-color: #f9e42e;
+  border-radius: 5px;
+  border-style: none;
+  color: #033048;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  margin: 20px 0 20px 0;
+  padding: 10px 30px 10px 30px;
+}
+
+/******************************************
+/* BENEFITS SECTION
+/*******************************************/
+
+.benefits {
+  background: #f0efef;
+  height: 350px;
+}
+.benefits h2 {
+  color: #033048;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 70px 0 20px 175px;
+}
+.benefits p {
+  color: #606161;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+  padding: 0 0 20px 180px;
+}
+.benefits ul {
+  color: #606161;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+  list-style-type: circle;
+  padding: 0 0 0 220px;
+}
+
+/******************************************
+/* QUOTE SECTION
+/*******************************************/
+
+.quote {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: auto;
+  background: url(../images/testimonial_bg.jpg);
+  height: 350px;
+  text-align: center;
+}
+.quote blockquote {
+  color: #cccccc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 85px 0 20px 0;
+}
+.quote span {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/******************************************
+/* CALL TO ACTION SECTION
+/*******************************************/
+
+.calltoaction {
+  background-color: #f9e42e;
+  padding: 30px;
+  text-align: center;
+}
+.calltoaction button {
+  background-color: #033048;
+  border-radius: 5px;
+  border-style: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 10px 50px 10px 50px;
+}
+
+/******************************************
+/* FOOTER SECTION
+/*******************************************/
+
+footer {
+  background: #2E2E2E;
+  height: 280px;
+  text-align: center;
+}
+.footer-logo {
+  display: inline-block;
+  color: #f9e42e;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  padding: 50px;
+}
+footer a {
+  margin: 15px;
+}
+footer p {
+  padding: 50px 0 0 0;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}

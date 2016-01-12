@@ -16,7 +16,7 @@ div {
 }
 
 .child-2 {
-  font-size: 1.5em;/* this value will compound the parent value - 1.5 * 15px = 22.5px*/
+  font-size: 0.5em;/* this value will compound the parent value - 1.5 * 15px = 22.5px*/
 }
 
 .child-3 {
