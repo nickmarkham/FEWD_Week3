@@ -46,10 +46,9 @@ Developer @GA in SG
 /*******************************************/
 
 body {
-     background-color: #f0efef;
-     font-size: 12px;
-     line-height: 1.4;
+     font-size: 16px;
      font-family: 'Open Sans', sans-serif;
+     background-color: #f0efef;
 }
 
 /******************************************
@@ -58,7 +57,6 @@ body {
 
 /* Center the container */
 #container {
-  position:relative;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -68,20 +66,38 @@ body {
 /*******************************************/
 
 header {
-  min-height: 80px;
-  background-color: #033048;
+    background: #033048;
+    background-image: url(../images/header_bg.jpg);
+    background-position: center bottom;
+    padding: 25px 0px 0px 0px;
 }
 
-header .logo {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 800;
+#headerBlog {
+  height: 120px;
+}
+
+#headerLanding {
+  height: 500px;
+}
+
+header h1 {
+  color: #FFFFFF;
   float: left;
+  font-size: 32px;
+  font-weight: bolder;
   text-decoration: none;
   padding: 20px 0 0 60px;
 }
 
-nav {
+header h2 {
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 100px 0 40px 0;
+  text-align: center;
+}
+
+header nav {
   float: right;
   color: #f9e42e;
   padding: 30px 40px 30px 0;
@@ -93,6 +109,7 @@ header nav a {
   font-size: 16px;
   padding: 0 50px 0 0;
 }
+
 
 /******************************************
 /* MAIN CONTENT
@@ -111,6 +128,34 @@ header nav a {
   vertical-align: top;
 }
 
+/******************************************
+/* Links - Psuedo Class
+/*******************************************/
+
+/* unvisited link */
+a:link {
+    color: #f9e42e;
+}
+
+/* visited link */
+a:visited {
+    color: #f9e42e;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FFFFFF;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
+/******************************************
+/* ARTICLE - Blog Page Only
+/*******************************************/
+
 article {
   width: 70%;
   display: inline-block;
@@ -118,7 +163,7 @@ article {
   overflow: hidden;
 }
 
-article h2 {
+article h3 {
   color: #033048;
   font-size: 36px;
   padding: 30px 0 20px 0;
@@ -149,9 +194,8 @@ article p {
   text-decoration: none;
 }
 
-
 /******************************************
-/* SIDEBAR
+/* SIDEBAR - Blog Page Only
 /*******************************************/
 
 .sidebar {
@@ -160,7 +204,7 @@ article p {
   width: 30%;
 }
 
-.sidebar h3 {
+.sidebar h4 {
   font-size: 28px;
   font-weight: 800;
   color: #033048;
@@ -190,25 +234,132 @@ article p {
   padding-top: 50px;
 }
 
+/* unvisited link */
+.sidebar a:link {
+    color: #033048;
+}
+
+/* visited link */
+.sidebar a:visited {
+    color: #033048;
+}
+
+/* mouse over link */
+.sidebar a:hover {
+    color: red;
+}
+
+/* selected link */
+.sidebar a:active {
+    color: #0000FF;
+}
+
 /******************************************
-/* Call to Action Section
+/* BENEFITS SECTION - Landing Page Only
+/*******************************************/
+
+.benefits {
+  background: #FFFFFF;
+  height: 350px;
+}
+.benefits h3 {
+  color: #033048;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 70px 0 20px 60px;
+}
+.benefits p {
+  color: #606161;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0 0 20px 140px;
+}
+.benefits ul {
+  color: #606161;
+  font-size: 16px;
+  font-weight: lighter;
+  list-style-type: circle;
+  padding: 0 0 0 180px;
+}
+
+/******************************************
+/* QUOTE SECTION - Landing Page Only
+/*******************************************/
+
+.quote {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: auto;
+  background: url(../images/testimonial_bg.jpg);
+  height: 350px;
+  text-align: center;
+}
+.quote blockquote {
+  color: #cccccc;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 100;
+  padding: 85px 0 20px 0;
+}
+.quote span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/******************************************
+/* Call to Action Sectionm - BOTH PAGES
 /*******************************************/
 
 .cta {
   background-color: #f9e42e;
-  padding: 40px;
+  padding: 20px;
   text-align: center;
-  border-top: solid 80px #f0efef;
 }
 
-.cta button {
-  background-color: #033048;
-  border-radius: 5px;
-  border-style: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 800;
-  padding: 10px 50px 10px 50px;
+#ctablog {
+  border-top: solid 40px #f0efef;
+}
+
+/******************************************
+/* Buttons - Both Pages
+/*******************************************/
+
+button {
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 70px;
+    margin: 20px 0 20px 0;
+}
+
+button:focus {
+    outline: none;
+}
+
+.blueButton {
+    color: #fff;
+    background: #033048;
+}
+
+.yellowButton {
+    color: #033048;
+    background: #f9e42e;
+}
+
+.blueButton:hover {
+    color: #f9e42e;
+    background: #033048;
+}
+
+.yellowButton:hover {
+    color: #fff;
+    background: #f9e42e;
+}
+
+#centerbutton {
+  text-align: center;
 }
 
 /******************************************
@@ -224,7 +375,6 @@ footer {
 .footer-logo {
   display: inline-block;
   color: #f9e42e;
-  font-family: 'Open Sans', sans-serif;
   font-size: 35px;
   font-weight: 800;
   padding: 50px;
@@ -237,7 +387,6 @@ footer a {
 footer p {
   padding: 50px 0 0 0;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 400;
 }

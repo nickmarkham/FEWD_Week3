@@ -83,6 +83,7 @@ header {
   height: 500px;
   text-align: center;
 }
+
 header h1 {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -97,6 +98,7 @@ header h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   font-weight: bolder;
+  text-decoration: none;
   padding: 30px 600px 0 40px;
 }
 .header-button {
@@ -173,12 +175,17 @@ header h1 {
 /* CALL TO ACTION SECTION
 /*******************************************/
 
-.calltoaction {
+.cta {
   background-color: #f9e42e;
-  padding: 30px;
+  padding: 0px 0px 0px 0px;
   text-align: center;
 }
-.calltoaction button {
+
+#ctablog {
+
+}
+
+.cta button {
   background-color: #033048;
   border-radius: 5px;
   border-style: none;

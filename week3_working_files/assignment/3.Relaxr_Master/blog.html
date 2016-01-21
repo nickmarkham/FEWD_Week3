@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 			<meta charset="utf-8">
-			<meta name="description" content="Relaxr Landing Page - Personal Assistant Singapore">
+			<meta name="description" content="Relaxr Blog Page - Personal Assistant Singapore">
 			<meta name="keywords" content="The Perfect Personal Assistant - Singapore Personal Assistant">
 
 		<title>Relaxr Blog</title>
@@ -12,27 +12,30 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800, 400' rel='stylesheet' type='text/css'>
+
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script defer type="text/javascript" src="js/script.js"></script>
+
 	</head>
 
 	<body>
 		<div id="container">
 
-			<header>
-				<a href="#" class='logo'>Relaxr</a>
-				<nav>
-					<a href="RelaxrWeek1.html">About</a>
-					<a href="#">FAQ</a>
-					<a href="#">Team</a>
-					<a href="#">Contact Us</a>
-					<a href="#">Blog</a>
-				</nav>
-			</header>
-
+			<header id="headerBlog">
+				<a href="blog.html"><h1>Relaxr</h1></a>
+					<nav>
+						<a href="landing.html">About</a>
+						<a href="#">FAQ</a>
+						<a href="#">Team</a>
+						<a href="#">Contact Us</a>
+						<a href="#">Blog</a>
+					</nav>
+				</header>
 
 			<div id="main-content">
 
 				<article>
-					<h2>How I implemented Relaxr in 2 <br> weeks and changed my life</h2>
+					<h3>How I implemented Relaxr in 2 <br> weeks and changed my life</h3>
 
 					<img src="images/blog_photo1.jpg">
 
@@ -46,10 +49,10 @@
 						Mauris vel leo vitae ipsum mollis mollis non non lorem.
 						Phasellus tellus ligula, blandit ac sollicitudin id, hendrerit non diam. </p>
 
-					<p class="read-more">Read more ></p>
+					<p class="read-more">Read more></p>
 					<hr>
 
-					<h2>I traveled across the globe thanks to Relaxr's Excel automation</h2>
+					<h3>I traveled across the globe thanks to Relaxr's Excel automation</h3>
 
 					<img src="images/blog_photo2.jpg">
 
@@ -61,15 +64,15 @@
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						Phasellus consectetur posuere lorem id rutrum. Mauris eu scelerisque dolor, id ultricies leo.
 						Mauris vel leo vitae ipsum mollis mollis non non lorem.
-						Phasellus tellus ligula, blandit ac sollicitudin id, hendrerit non diam..</p>
+						Phasellus tellus ligula, blandit ac sollicitudin id, hendrerit non diam.</p>
 
-					<p class="read-more">Read more ></p>
+					<p class="read-more">Read more></p>
 					<hr>
 
 				</article>
 
 				<section class="sidebar">
-					<h3>Categories</h3><br>
+					<h4>Categories</h4><br>
 					<ul>
 						<li><a href="#">Success Stories</a></li>
 						<li><a href="#">Stats</a></li>
@@ -78,9 +81,9 @@
 						<li><a href="#">Business Tips</a></li>
 					</ul>
 
-					<h3>About Relaxr</h3><br>
+					<h4>About Relaxr</h4><br>
 					<p>Proin sed justo vel sapien varius aucto. Proin scelerisque mass at luctus
-						tinicidunt fusce porttitor, sapien sed tincidunt fringila <br><br> <a href="RelaxrWeek1.html">Learn More</p>
+						tinicidunt fusce porttitor, sapien sed tincidunt fringila <br><br> <a href="landing.html">Learn More</a></p>
 
 					<img src="images/ad-unit.png">
 
@@ -88,9 +91,11 @@
 
 			</div><!-- #main-content -->
 
+			<div id="ctablog">
 				<section class="clear cta">
-					<button>Sign Up Now!</button>
+					<button class="blueButton">Sign Up Now!</button>
 				</section>
+			</div>	<!-- #ctablog -->
 
 				<footer>
 					<logo class="footer-logo">Relaxr</logo><br>
